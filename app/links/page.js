@@ -45,7 +45,7 @@ export default function Links() {
           
           <div className="w-64 h-64 mx-auto rounded-lg overflow-hidden">
             <Image 
-              src="app\favorites\4.gif"
+              src="https://ibb.co/5XLt9GHn"
               alt="QR Code"
               width={256} // Ширина изображения
               height={256} // Высота изображения
