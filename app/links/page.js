@@ -45,7 +45,7 @@ export default function Links() {
           
           <div className="w-64 h-64 mx-auto rounded-lg overflow-hidden">
             <Image 
-              src="https://media.discordapp.net/attachments/1354578653651927080/1356895029951598642/4.gif?ex=684148f9&is=683ff779&hm=34c469026821da8b324ff71df7427099cc56e0fb4efa3bb1699de47f463f6118&=&width=338&height=338"
+              src="app\favorites\4.gif"
               alt="QR Code"
               width={256} // Ширина изображения
               height={256} // Высота изображения
