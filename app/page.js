@@ -32,7 +32,7 @@ export default function Home() {
 
       {/* Popular This Week Section */}
       <section className="mb-24 animate-fadeIn animate-delay-400">
-        <h2 className="text-4xl font-bold text-center text-white mb-12">Популярные стримы этой недели</h2>
+        <h2 className="text-4xl font-bold text-center text-white mb-12">Наши стримеры сейчас онлайн</h2>
         {/* TODO: Заменить на реальные карточки стримов с анимацией */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {Array(3).fill(0).map((_, i) => (
