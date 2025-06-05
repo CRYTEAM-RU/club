@@ -9,7 +9,7 @@ export default function Streamers() {
       {/* TODO: Интегрировать шапку и футер через Layout или компоненты */}
       
       <section className="container mx-auto px-8 py-16 animate-fadeIn">
-        <h1 className="text-4xl lg:text-5xl font-bold mb-12 text-center">Активные стримеры и персонал</h1>
+        <h1 className="text-4xl lg:text-5xl font-bold mb-12 text-center">Активные участники</h1>
         
         {/* TODO: Реализовать фильтрацию/поиск */}
         <div className="mb-10 flex justify-center space-x-4 animate-slideUp animate-delay-100">
