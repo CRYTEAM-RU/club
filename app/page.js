@@ -9,8 +9,8 @@ export default function Home() {
     <main className="container mx-auto px-8 py-12">
       {/* Hero Section */}
       <section className="text-center mb-24 animate-fadeIn">
-        <h1 className="text-5xl font-bold text-purple-400 mb-4">Добро пожаловать в Клуб Анонимных Стримеров</h1>
-        <p className="text-xl text-gray-300 mb-8">Место, где страсть к стримингу объединяет нас, сохраняя анонимность.</p>
+        <h1 className="text-5xl font-bold text-purple-400 mb-4">Добро пожаловать в КАС</h1>
+        <p className="text-xl text-gray-300 mb-8">Место, где страсть к стримингу объединяет нас.</p>
         <button className="bg-purple-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-purple-700 transition duration-300">Присоединиться</button>
       </section>
 
@@ -32,7 +32,7 @@ export default function Home() {
 
       {/* Popular This Week Section */}
       <section className="mb-24 animate-fadeIn animate-delay-400">
-        <h2 className="text-4xl font-bold text-center text-white mb-12">Популярные стримы этой недели</h2>
+        <h2 className="text-4xl font-bold text-center text-white mb-12">Наши стримеры сейчас онлайн</h2>
         {/* TODO: Заменить на реальные карточки стримов с анимацией */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {Array(3).fill(0).map((_, i) => (
