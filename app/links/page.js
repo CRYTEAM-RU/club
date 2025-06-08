@@ -45,7 +45,7 @@ export default function Links() {
           
           <div className="w-64 h-64 mx-auto rounded-lg overflow-hidden">
             <Image 
-              src={`${process.env.NODE_ENV === 'production' ? '/site' : ''}/images/4.gif`}
+              src={`${process.env.NODE_ENV === 'production' ? '/public' : ''}/images/4.gif`}
               alt="QR Code"
               width={256}
               height={256}
