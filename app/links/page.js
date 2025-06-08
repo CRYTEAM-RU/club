@@ -45,11 +45,11 @@ export default function Links() {
           
           <div className="w-64 h-64 mx-auto rounded-lg overflow-hidden">
             <Image 
-              src="https://ibb.co/5XLt9GHn"
+              src={`${process.env.NODE_ENV === 'production' ? '/site' : ''}/images/4.gif`}
               alt="QR Code"
-              width={256} // Ширина изображения
-              height={256} // Высота изображения
-              unoptimized={true} // Отключаем оптимизацию Next.js для GIF
+              width={256}
+              height={256}
+              unoptimized={true}
             />
           </div>
           <p className="text-gray-400 text-sm mt-4">Отсканируйте код, чтобы получить доступ.</p>
