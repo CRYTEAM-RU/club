@@ -3,8 +3,18 @@
 import React from 'react';
 // import { motion } from 'framer-motion'; // Закомментировано
 import Image from 'next/image'; // Импортируем компонент Image из Next.js
+import QRCode from 'qrcode';
+import { useEffect, useState } from 'react';
 
 export default function Links() {
+  const [svg, setSvg] = useState('');
+
+  useEffect(() => {
+    QRCode.toString('https://discord.gg/jmp8AqDCQz', { type: 'svg', width: 256 }, (err, url) => {
+      if (!err) setSvg(url);
+    });
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-950 to-blue-950 text-white overflow-hidden pt-20">
       {/* TODO: Интегрировать шапку и футер через Layout или компоненты */}
@@ -31,26 +41,28 @@ export default function Links() {
                 <div>
                   <h3 className="text-xl font-bold mb-2">Название ссылки {index + 1}</h3>
                   <p className="text-gray-400 text-sm">Краткое описание ссылки.</p>
-                  {/* TODO: Заменить на реальную ссылку */}
-                  <a href="#" className="text-purple-400 hover:underline text-sm">Перейти</a>
+                  <a href="https://discord.gg/jmp8AqDCQz" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:underline text-sm">Перейти</a>
                 </div>
               </div>
             ))}
           </div>
         </div>
 
+        {/* Второй QR-код для Discord */}
+        <div className="text-center animate-slideUp animate-delay-800 mt-16">
+          <h2 className="text-2xl font-bold text-white mb-4">QR для Discord</h2>
+          <div className="w-64 h-64 mx-auto rounded-lg overflow-hidden bg-white flex items-center justify-center">
+            <div dangerouslySetInnerHTML={{ __html: svg }} />
+          </div>
+          <p className="text-gray-400 text-sm mt-4">Сканируйте для перехода в Discord-сервер.</p>
+        </div>
+
         {/* Секция QR Code */}
         <div className="text-center animate-slideUp animate-delay-700">
           <h2 className="text-3xl font-bold text-white mb-8">QR Code для быстрого доступа</h2>
           
-          <div className="w-64 h-64 mx-auto rounded-lg overflow-hidden">
-            <Image 
-              src="/images/4.gif"
-              alt="QR Code"
-              width={256}
-              height={256}
-              unoptimized={true}
-            />
+          <div className="w-64 h-64 mx-auto rounded-lg overflow-hidden bg-white flex items-center justify-center">
+            <div dangerouslySetInnerHTML={{ __html: svg }} />
           </div>
           <p className="text-gray-400 text-sm mt-4">Отсканируйте код, чтобы получить доступ.</p>
         </div>
