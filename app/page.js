@@ -30,25 +30,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Popular This Week Section */}
-      <section className="mb-24 animate-fadeIn animate-delay-400">
-        <h2 className="text-4xl font-bold text-center text-white mb-12">Популярные стримы этой недели</h2>
-        {/* TODO: Заменить на реальные карточки стримов с анимацией */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {Array(3).fill(0).map((_, i) => (
-            // Удалены motion компоненты
-            <div key={i} className={`bg-gray-800/50 backdrop-blur-sm rounded-lg overflow-hidden animate-slideUp animate-delay-${500 + i * 100}`}>
-              <div className="w-full h-48 bg-gray-700 animate-pulse"></div> {/* Placeholder изображения */}
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">Название стрима Placeholder</h3>
-                <p className="text-gray-400 text-sm mb-4">Автор Placeholder</p>
-                <div className="text-gray-400 text-sm">Теги: #placeholder #стрим</div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Join Us Section */}
       <section className="text-center mb-24 animate-fadeIn animate-delay-800">
         <h2 className="text-4xl font-bold text-white mb-8">Присоединяйтесь к нашему сообществу</h2>
