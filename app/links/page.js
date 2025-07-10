@@ -57,16 +57,6 @@ export default function Links() {
           <p className="text-gray-400 text-sm mt-4">Сканируйте для перехода в Discord-сервер.</p>
         </div>
 
-        {/* Секция QR Code */}
-        <div className="text-center animate-slideUp animate-delay-700">
-          <h2 className="text-3xl font-bold text-white mb-8">QR Code для быстрого доступа</h2>
-          
-          <div className="w-64 h-64 mx-auto rounded-lg overflow-hidden bg-white flex items-center justify-center">
-            <div dangerouslySetInnerHTML={{ __html: svg }} />
-          </div>
-          <p className="text-gray-400 text-sm mt-4">Отсканируйте код, чтобы получить доступ.</p>
-        </div>
-      </section>
 
       {/* TODO: Интегрировать футер */}
     </div>
