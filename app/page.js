@@ -9,8 +9,8 @@ export default function Home() {
     <main className="container mx-auto px-8 py-12">
       {/* Hero Section */}
       <section className="text-center mb-24 animate-fadeIn">
-        <h1 className="text-5xl font-bold text-purple-400 mb-4">Добро пожаловать в КАС</h1>
-        <p className="text-xl text-gray-300 mb-8">Место, где страсть к стримингу объединяет нас.</p>
+        <h1 className="text-5xl font-bold text-purple-400 mb-4">Добро пожаловать в Клуб Анонимных Стримеров</h1>
+        <p className="text-xl text-gray-300 mb-8">Место, где страсть к стримингу объединяет нас, сохраняя анонимность.</p>
         <button className="bg-purple-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-purple-700 transition duration-300">Присоединиться</button>
       </section>
 
@@ -32,7 +32,7 @@ export default function Home() {
 
       {/* Popular This Week Section */}
       <section className="mb-24 animate-fadeIn animate-delay-400">
-        <h2 className="text-4xl font-bold text-center text-white mb-12">Наши стримеры сейчас онлайн</h2>
+        <h2 className="text-4xl font-bold text-center text-white mb-12">Популярные стримы этой недели</h2>
         {/* TODO: Заменить на реальные карточки стримов с анимацией */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {Array(3).fill(0).map((_, i) => (
@@ -44,23 +44,6 @@ export default function Home() {
                 <p className="text-gray-400 text-sm mb-4">Автор Placeholder</p>
                 <div className="text-gray-400 text-sm">Теги: #placeholder #стрим</div>
               </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Popular Artists/Members Section */}
-      <section className="mb-24 animate-fadeIn animate-delay-600">
-        <h2 className="text-4xl font-bold text-center text-white mb-12">Активные участники</h2>
-        {/* TODO: Заменить на реальные карточки участников с анимацией */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {Array(8).fill(0).map((_, i) => (
-             // Удалены motion компоненты
-            <div key={i} className={`bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 flex flex-col items-center text-center animate-slideUp animate-delay-${700 + i * 50}`}>
-              <div className="w-24 h-24 rounded-full bg-gray-700 mb-4 animate-pulse"></div> {/* Placeholder аватара */} 
-              <h3 className="text-xl font-semibold text-white mb-2">Имя Участника {i + 1}</h3>
-              <p className="text-gray-400 text-sm">Роль Placeholder</p>
-              {/* TODO: Добавить иконки соцсетей */}
             </div>
           ))}
         </div>
