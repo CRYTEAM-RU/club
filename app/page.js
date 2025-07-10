@@ -9,8 +9,8 @@ export default function Home() {
     <main className="container mx-auto px-8 py-12">
       {/* Hero Section */}
       <section className="text-center mb-24 animate-fadeIn">
-        <h1 className="text-5xl font-bold text-purple-400 mb-4">Добро пожаловать в Клуб Анонимных Стримеров</h1>
-        <p className="text-xl text-gray-300 mb-8">Место, где страсть к стримингу объединяет нас, сохраняя анонимность.</p>
+        <h1 className="text-5xl font-bold text-purple-400 mb-4">Добро пожаловать в КАС</h1>
+        <p className="text-xl text-gray-300 mb-8">Место, где страсть к стримингу объединяет нас.</p>
         <button className="bg-purple-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-purple-700 transition duration-300">Присоединиться</button>
       </section>
 
@@ -21,7 +21,7 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-8 animate-slideUp animate-delay-200">
             <h3 className="text-2xl font-semibold text-white mb-4">Наша миссия</h3>
-            <p className="text-gray-300">Мы создаем безопасное и поддерживающее пространство для стримеров всех уровней, где можно делиться опытом и развиваться.</p>
+            <p className="text-gray-300">Мы создаем безопасное и поддерживающее сообщество для стримеров всех уровней, где можно делиться опытом и развиваться.</p>
           </div>
           <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-8 animate-slideUp animate-delay-300">
             <h3 className="text-2xl font-semibold text-white mb-4">Что мы предлагаем</h3>
