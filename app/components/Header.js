@@ -11,8 +11,11 @@ export default function Header() {
 
   return (
     <header className="container mx-auto px-8 py-6 flex justify-between items-center z-20 relative">
-      <div className="text-2xl font-bold text-purple-400">
-        <Link href="/">Клуб Анонимных Стримеров</Link>
+      <div className="flex items-center">
+        <div className="text-2xl font-bold text-purple-400">
+          <Link href="/">Клуб Анонимных Стримеров</Link>
+        </div>
+        <img src="/images/ez-logo.png" alt="EZ Logo" className="ml-3 w-10 h-10" />
       </div>
       
       {/* Мобильное меню */}
