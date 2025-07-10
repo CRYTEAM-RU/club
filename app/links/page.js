@@ -55,7 +55,8 @@ export default function Links() {
             <div dangerouslySetInnerHTML={{ __html: svg }} />
           </div>
           <p className="text-gray-400 text-sm mt-4">Сканируйте для перехода в Discord-сервер.</p>
-     </section>
+         </div>
+      </section>
 
       {/* TODO: Интегрировать футер */}
     </div>
